@@ -27,7 +27,7 @@ function Register() {
 
   const onSubmit = async (userInfo: any) => {
     try {
-      const checkUser = await fetch("https://next-js-orcin-kappa.vercel.app/userCheck", {
+      const checkUser = await fetch("https://next-js-orcin-kappa.vercel.app/api/userCheck", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
