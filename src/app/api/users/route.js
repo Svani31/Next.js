@@ -19,10 +19,10 @@ export async function GET(request,{params}){
     return NextResponse.json({userById},{message:"userCreadedSucces"},{status:200})
 }
 
-// export async function DELETE(request){
-//     const id = request.nextUrl.searchParams.get("id")
-//     await connectMongoDB();
-//     await Users.findByIdAndDelete(id)
-//     return NextResponse.json({message:"Deleted"},{status:200})
+export async function DELETE(request){
+    const id = request.nextUrl.searchParams.get("id")
+    await connectMongoDB();
+    await Users.findByIdAndDelete(id)
+    return NextResponse.json({message:"Deleted"},{status:200})
     
-// }
+}

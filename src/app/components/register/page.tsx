@@ -42,7 +42,7 @@ function Register() {
       //   return;
       // }
 
-      const respons = await fetch("http://localhost:3000/api/users", {
+      const respons = await fetch("https://next-js-orcin-kappa.vercel.app/api/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
